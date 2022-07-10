@@ -14,12 +14,6 @@ let rerenderAppTree = (state) => {
   );
 };
 
-// let rerenderAppTree = (state) => {
-//   createRoot(document.getElementById("root")).render(
-//     <App state={state} dispatch={store.dispatch.bind(store)} />
-//   );
-// };
-
 rerenderAppTree(store.getState());
 store.subscribe(() => {
   let state = store.getState();
